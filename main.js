@@ -19,7 +19,7 @@ const trigger = (e) => {
 
     switch(getValue) {
         case "Rock":
-            placeholder.innerText = `Your chose ${getValue}! CPU selected ${compPlay}, You won!`;
+            placeholder.innerText = `You chose ${getValue}! CPU selected ${compPlay}, You won!`;
             break;
         case "Paper":
             placeholder.innerText = `You chose ${getValue}! CPU selected ${compPlay}, You lost!`;
