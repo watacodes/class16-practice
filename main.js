@@ -102,6 +102,9 @@ const min = (a, b) => a > b ? b : a;
 console.log(min(9, 2));
 console.log(min('Zebra', 'monkey'));
 
+console.log('Z'.charCodeAt(0));
+console.log('monkey'.charCodeAt(0));
+
 // Count how many "B" letters in a string
 
 const countBs = (str) => {
@@ -131,3 +134,34 @@ const countChars = (str, letter) => {
 
 console.log(countChars('Riceball Kingdom', 'l'));
 console.log(countChars('I am AaaAAA', "A"));
+
+// checkboard
+
+let gridSize = 8;
+let chess = "";
+function chessBoard() {
+  for (let row = 0; row < gridSize; row++) {
+    for (let col = 0; col < gridSize; col++) {
+      if ((row + col) % 2 === 0) {
+        chess += " ";
+      } else {
+        chess += "#";
+      }
+    }
+    chess += "\n";
+  }
+  console.log(chess);
+}
+
+chessBoard();
+
+// triangle
+
+    // line 1 => one hash sign
+    // linebreak
+    // line 2 => two hash signs
+    // linebreak
+    // continue till 7
+for (let triangle = "#"; triangle.length < 8; triangle += "#") {
+    console.log(triangle);
+}
