@@ -165,3 +165,54 @@ chessBoard();
 for (let triangle = "#"; triangle.length < 8; triangle += "#") {
     console.log(triangle);
 }
+
+// countBs (revision)
+
+const countLetters = (str, letter) => {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === letter) {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countLetters('Meee', 'e'));
+
+// make triangle (revision)
+
+function makeTri() {
+    for (let i = "#"; i.length < 8; i += "#") {
+    console.log(i);
+    }
+};
+
+makeTri();
+
+// chessboard (revision)
+// 1-1 blankspace,
+// 1-2 hash sign, => if col + row is even, then there'll be a blankspace.
+
+const makeChessBoard = () => {
+    // set the grid size to 8
+    let grid = 8;
+    // Declare a variable that stores the hash signs
+    let board = "";
+    // Write two for loops for rows and cols
+    for (let i = 0; i < grid; i++) {
+        for (let j = 0; j < grid; j++) {
+            if ((i + j) % 2 === 0) {
+                board += " ";
+            } else {
+                board += "#";
+            }
+        }
+        board += "\n";
+    }
+    return board;
+}
+
+console.log(makeChessBoard());
+
+
