@@ -215,4 +215,35 @@ const makeChessBoard = () => {
 
 console.log(makeChessBoard());
 
+// Array manipulation practice
 
+const groceryList = ['Banana', 'Egg', 'Chocolate', 'Eggplant', 'Rice', 'Tea', 'Rice Cracker'];
+
+// Add an item to the end of the grocery list
+
+console.log(groceryList.push('Bread'));
+
+console.log(groceryList);
+
+// Delete the first item of the grocery list
+
+groceryList.shift();
+
+console.log(groceryList);
+
+// Delete the last item of the grocery list
+
+groceryList.pop();
+
+console.log(groceryList);
+
+// Add 'Bread' and 'Salmon' to the beginning of the grocery list
+
+groceryList.unshift('Bread', 'Salmon');
+console.log(groceryList);
+
+// Pick up 'Egg', 'Chocolate', 'Eggplant, and 'Rice'
+
+const pickEggChocoEggplantRice = groceryList.slice(2, 6);
+console.log(pickEggChocoEggplantRice);
+console.log(`This is original array: ${groceryList}`);
