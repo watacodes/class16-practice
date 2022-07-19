@@ -221,20 +221,17 @@ const groceryList = ['Banana', 'Egg', 'Chocolate', 'Eggplant', 'Rice', 'Tea', 'R
 
 // Add an item to the end of the grocery list
 
-console.log(groceryList.push('Bread'));
-
+groceryList.push('Apple');
 console.log(groceryList);
 
 // Delete the first item of the grocery list
 
 groceryList.shift();
-
 console.log(groceryList);
 
 // Delete the last item of the grocery list
 
 groceryList.pop();
-
 console.log(groceryList);
 
 // Add 'Bread' and 'Salmon' to the beginning of the grocery list
@@ -244,6 +241,8 @@ console.log(groceryList);
 
 // Pick up 'Egg', 'Chocolate', 'Eggplant, and 'Rice'
 
-const pickEggChocoEggplantRice = groceryList.slice(2, 6);
-console.log(pickEggChocoEggplantRice);
-console.log(`This is original array: ${groceryList}`);
+const pickFourItems = groceryList.slice(2, 6);
+
+console.log(pickFourItems);
+console.log(`The answer should be: ['Egg', 'Chocolate', 'Eggplant', 'Rice']`);
+
